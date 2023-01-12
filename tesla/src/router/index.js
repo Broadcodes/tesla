@@ -39,6 +39,11 @@ const routes = [
     path: '/ricarica',
     name: 'ricarica',
     component: () => import('../views/RicaricaView.vue')
+  },
+  {
+    path: '/assistenza',
+    name: 'assistenza',
+    component: () => import('../views/AssistenzaView.vue')
   }
 ]
 
