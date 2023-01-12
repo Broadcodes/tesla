@@ -1,5 +1,9 @@
 <template>
     <div>
+        <head>
+            <title>Powerwall | Tesla Italia</title>
+        </head>
+
         POWERWALL
     </div>
 </template>

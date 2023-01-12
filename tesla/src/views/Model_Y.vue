@@ -1,5 +1,9 @@
 <template>
     <div>
+        <head>
+            <title>Model Y | Tesla Italia</title>
+        </head>
+        
         MODEL Y
     </div>
 </template>

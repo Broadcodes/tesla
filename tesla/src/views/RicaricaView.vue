@@ -1,5 +1,9 @@
 <template>
     <div>
+        <head>
+            <title>Ricarica | Tesla Italia</title>
+        </head>
+
         RICARICA
     </div>
 </template>
