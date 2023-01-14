@@ -44,6 +44,11 @@ const routes = [
     path: '/assistenza',
     name: 'assistenza',
     component: () => import('../views/AssistenzaView.vue')
+  },
+  {
+    path: '/drive',
+    name: 'drive',
+    component: () => import('../views/DriveView.vue')
   }
 ]
 
