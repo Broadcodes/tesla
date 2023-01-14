@@ -5,23 +5,31 @@
         <router-link to="/"><img src="./assets/teslaLogo.svg" alt="Tesla Logo"></router-link>
       </div>
       <div id="nav-models">
-        <router-link to="/model_S">Model S</router-link>
-        <router-link to="/model_3">Model 3</router-link>
-        <router-link to="/model_X">Model X</router-link>
-        <router-link to="/model_Y">Model Y</router-link>
-        <router-link to="/powerwall">Powerwall</router-link>
-        <router-link to="/ricarica">Ricarica</router-link>
+        <router-link class="link" to="/model_S">Model S</router-link>
+        <router-link class="link" to="/model_3">Model 3</router-link>
+        <router-link class="link" to="/model_X">Model X</router-link>
+        <router-link class="link" to="/model_Y">Model Y</router-link>
+        <router-link class="link" to="/powerwall">Powerwall</router-link>
+        <router-link class="link" to="/ricarica">Ricarica</router-link>
       </div>
-      <div class="menu">
-        <router-link to="/assistenza">Assistenza</router-link>
-        <input type="button" value="Menu">
+      <div id="menu">
+        <router-link class="link" to="/assistenza">Assistenza</router-link>
+        <router-link class="link" to="/">Shop</router-link>
+        <router-link class="link" to="/">Account</router-link>
+        <input class="link no-btn" type="button" value="Menu">
       </div>
     </nav>
-    <router-view id="viewRouter" />
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+html {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -42,7 +50,7 @@ nav {
   left: 0px;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  z-index: 50;
 
   #teslaLogo {
     width: 120px;
@@ -57,10 +65,56 @@ nav {
     }
   }
 
+  #nav-models {
+    transform: translateX(17%);
+  }
+
+  .link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    padding: 6px 16px;
+    transition: all .5s;
+
+    &:hover {
+      margin-top: 2px;
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  .no-btn {
+    background: none;
+    border: none;
+  }
+
+  #menu {
+    input {
+      cursor: pointer;
+    }
+  }
 }
 
-#viewRouter{
-  position: relative;
-  top: 56px;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>
