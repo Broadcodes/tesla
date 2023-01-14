@@ -9,7 +9,7 @@
 
             <p class="descriptionText">Ha ricevuto 5 stelle sulla valutazione complessiva di Euro NCAP</p>
 
-            <i class="btnScrollHome fa-solid fa-chevron-down"></i>
+            <i class="btnScrollHome fa-solid fa-chevron-down" @click="$emit('changeView', 717)"></i>
         </div>
 
         <!-- MODEL Y -->

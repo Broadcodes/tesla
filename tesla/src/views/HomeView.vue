@@ -11,7 +11,7 @@
           <AreaTitlePage :title="titlePageArea[index]" :subtitle="subTitlePageArea" />
         </div>
       </div>
-      <AreaButtonHome :scrollValue="scrollTop" />
+      <AreaButtonHome :scrollValue="scrollTop" @changeView="newView" />
     </div>
 
   </div>
@@ -36,10 +36,14 @@ export default {
     AreaTitlePage,
     AreaButtonHome,
   },
-    methods: {
+  methods: {
     handleScroll(event) {
       this.scrollTop = Math.floor(event.currentTarget.scrollTop);
     },
+    newView(value) {
+      let containerBox = document.querySelector('.container');
+      containerBox.scrollTop = value;
+    }
   }
 }
 
