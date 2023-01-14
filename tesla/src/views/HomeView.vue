@@ -12,14 +12,7 @@
         </div>
       </div>
       <AreaButtonHome :scrollValue="scrollTop" @changeView="newView" />
-      <footer>
-        <router-link class="link" to="/">Tesla © 2023</router-link>
-        <router-link class="link" to="/">Privacy e note legali</router-link>
-        <router-link class="link" to="/">Contatti</router-link>
-        <router-link class="link" to="/">Carriere</router-link>
-        <router-link class="link" to="/">Notizie</router-link>
-        <router-link class="link" to="/">Sedi</router-link>
-      </footer>
+      <FooterArea />
     </div>
   </div>
 </template>
@@ -27,6 +20,7 @@
 <script>
 import AreaTitlePage from '@/components/home/AreaTitlePage.vue';
 import AreaButtonHome from '@/components/home/AreaButtonHome.vue';
+import FooterArea from '@/components/FooterArea.vue';
 
 export default {
   name: 'HomeView',
@@ -41,6 +35,7 @@ export default {
   components: {
     AreaTitlePage,
     AreaButtonHome,
+    FooterArea,
   },
   methods: {
     handleScroll(event) {
@@ -93,30 +88,6 @@ export default {
 
   #model_Accessori {
     background-image: url("../assets/home/accessori.png");
-  }
-
-  footer {
-    width: 100%;
-    height: 56px;
-    display: flex;
-    position: relative;
-    bottom: 63px;
-    left: 0px;
-    justify-content: center;
-    align-items: center;
-    z-index: 50;
-
-    .link {
-      text-decoration: none;
-      font-size: 0.75rem;
-      font-family: 'Montserrat', sans-serif;
-      color: #000;
-      padding: 6px 8px;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
 </style>

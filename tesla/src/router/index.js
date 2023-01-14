@@ -11,23 +11,23 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/model_s',
-    name: 'model_s',
+    path: '/models',
+    name: 'models',
     component: () => import('../views/Model_S.vue')
   },
   {
-    path: '/model_3',
-    name: 'model_3',
+    path: '/model3',
+    name: 'model3',
     component: () => import('../views/Model_3.vue')
   },
   {
-    path: '/model_x',
-    name: 'model_x',
+    path: '/modelx',
+    name: 'modelx',
     component: () => import('../views/Model_X.vue')
   },
   {
-    path: '/model_y',
-    name: 'model_y',
+    path: '/modely',
+    name: 'modely',
     component: () => import('../views/Model_Y.vue')
   },
   {
@@ -36,13 +36,13 @@ const routes = [
     component: () => import('../views/PowerwallView.vue')
   },
   {
-    path: '/ricarica',
-    name: 'ricarica',
+    path: '/charging',
+    name: 'charging',
     component: () => import('../views/RicaricaView.vue')
   },
   {
-    path: '/assistenza',
-    name: 'assistenza',
+    path: '/support',
+    name: 'support',
     component: () => import('../views/AssistenzaView.vue')
   },
   {

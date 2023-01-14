@@ -5,17 +5,15 @@
         <router-link to="/"><img src="./assets/teslaLogo.svg" alt="Tesla Logo"></router-link>
       </div>
       <div id="nav-models">
-        <router-link class="link" to="/model_S">Model S</router-link>
-        <router-link class="link" to="/model_3">Model 3</router-link>
-        <router-link class="link" to="/model_X">Model X</router-link>
-        <router-link class="link" to="/model_Y">Model Y</router-link>
+        <router-link class="link" to="/models">Model S</router-link>
+        <router-link class="link" to="/model3">Model 3</router-link>
+        <router-link class="link" to="/modelx">Model X</router-link>
+        <router-link class="link" to="/modely">Model Y</router-link>
         <router-link class="link" to="/powerwall">Powerwall</router-link>
-        <router-link class="link" to="/ricarica">Ricarica</router-link>
+        <router-link class="link" to="/charging">Ricarica</router-link>
       </div>
       <div id="menu">
-        <router-link class="link" to="/assistenza">Assistenza</router-link>
-        <router-link class="link" to="/">Shop</router-link>
-        <router-link class="link" to="/">Account</router-link>
+        <router-link class="link" to="/support">Assistenza</router-link>
         <input class="link no-btn" type="button" value="Menu">
       </div>
     </nav>
@@ -66,7 +64,7 @@ nav {
   }
 
   #nav-models {
-    transform: translateX(17%);
+    transform: translateX(3%);
   }
 
   .link {
