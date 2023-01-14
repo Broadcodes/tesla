@@ -19,13 +19,13 @@
         <input class="link no-btn" type="button" value="Menu">
       </div>
     </nav>
+
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
 html {
   overflow: hidden;
 }

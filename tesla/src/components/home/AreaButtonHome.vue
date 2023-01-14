@@ -93,11 +93,18 @@ export default {
             color: #fff;
             background-color: rgba(0, 0, 0, 0.6);
             
+            &:hover{
+                background-color: #000;
+            }
         }
 
         input:nth-child(2) {
             color: #000;
             background-color: rgba(255, 255, 255, 0.6);
+
+            &:hover{
+                background-color: #fff;
+            }
         }
     }
 
