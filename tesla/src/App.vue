@@ -23,7 +23,7 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 html {
   overflow: hidden;
 }
@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -70,7 +70,7 @@ nav {
   .link {
     text-decoration: none;
     font-size: 0.9rem;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: #000;
     padding: 6px 16px;
     transition: all .5s;
